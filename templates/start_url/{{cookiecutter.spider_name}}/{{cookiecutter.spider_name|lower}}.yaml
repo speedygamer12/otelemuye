@@ -5,6 +5,6 @@ custom_settings:
   ROBOTSTXT_OBEY: false
   JOBDIR: "crawls/{{cookiecutter.spider_name|lower}}"
   CONCURRENT_REQUESTS: 32
-  OUTPUT_FILE: "data/tuko_swahili.jsonl"
+  OUTPUT_FILE: "data/{{cookiecutter.spider_name|lower}}_{{cookiecutter.language}}.jsonl"
   ITEM_PIPELINES:
     otelemuye.pipelines.JsonWriterPipeline: 300
