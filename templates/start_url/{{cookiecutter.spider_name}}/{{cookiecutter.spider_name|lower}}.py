@@ -36,5 +36,6 @@ class {{cookiecutter.spider_name|capitalize}}Spider(CustomSpider):
 
     def _get_article_urls(self, soup: BeautifulSoup) -> List[str]:
         article_urls = [# TODO]
+        
         return article_urls
 
